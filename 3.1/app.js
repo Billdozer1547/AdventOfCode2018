@@ -21,8 +21,8 @@ for(var i of inputarray){
 var grid = Array(1000).fill(Array(1000).fill('0'));
 var overlapCount = 0;
 for(var l of locationList){
-    for(var y = 0; y < l.yLen; y++){
-        for(var x = 0; x < l.xLen; x++){
+    for(var x = 0; x < l.xLen; x++){
+        for(var y = 0; y < l.yLen; y++){
             if(grid[l.xPos+x][l.yPos+y] == '0'){
                 grid[l.xPos+x][l.yPos+y] = l.id;
             }
