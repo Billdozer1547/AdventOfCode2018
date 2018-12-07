@@ -11,7 +11,7 @@ for(var i of inputarray){
                 var indexToRemove = resultList.indexOf(i[36]);
                 resultList.splice(indexToRemove,1);
             }
-            var index = resultList.indexOf(i[5]);
+            var index = resultList.indexOf(i[5])+1;
             resultList.splice(index,0,i[36]);
         }     
         else{
